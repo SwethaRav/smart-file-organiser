@@ -1,6 +1,10 @@
 # simple smart file organiser
 A background tool that watches my Downloads folders and sorts text files and PDFs into folders based on their content.
 
+E.g It sorts all Finance related documents automatically once it sees files like that in the Downloads folder. The same for University files, when it sees certain words in the documents.
+
+Work in progress...
+
 ### Pipeline
 1. Monitor a folder and detect when a file arrives
 2. Open PDFs/Docs and extract raw string text in Python

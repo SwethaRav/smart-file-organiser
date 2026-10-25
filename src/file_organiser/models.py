@@ -1,4 +1,4 @@
-# This file sets ups the data models for the file organiser
+# This file sets ups the data models for the file organiser - so that it's easier to use and reduce bugs later on
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -16,6 +16,7 @@ class Reason(str, Enum):
     EXTRACTION_FAILED = "extraction_failed"
 
 # Class for determining which folder it chooses and how sure it is (confidence)
+# will add more fields to this class to help with debugging later
 @dataclass(frozen=True)
 class Classification:
     label: str
