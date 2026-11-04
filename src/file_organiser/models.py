@@ -21,3 +21,13 @@ class Reason(str, Enum):
 class Classification:
     label: str
     confidence: float
+
+# what the process () returns. The CLI decides how to display it
+@dataclass(frozen=True)
+class PipelineResult:
+    path: Path
+    outcome: Outcome
+    label: str | None = None
+    reason: Reason | None = None
+    destination: Path | None = None
+    detail: str = ""
